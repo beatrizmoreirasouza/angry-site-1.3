@@ -129,4 +129,44 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 0;
+}
+
+.auth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.auth-gallery {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.auth-gallery-img {
+  position: absolute;
+  background-image: url("img/cat.jpg");
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 7px 0 0 7px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.auth-gallery-img:hover {
+  width: 600px;
+  height: 600px;
+  border-radius: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-100px, -100px);
 }
